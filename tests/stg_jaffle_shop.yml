@@ -2,15 +2,19 @@ version: 2
 
 models:
   - name: stg_customers
+    description: The customers model of customer-iffic splendor
     columns: 
       - name: customer_id
+        description: Primary key
         tests:
           - unique
           - not_null
 
   - name: stg_orders
+    description: The orders model of order-iffic splendor
     columns:
       - name: order_id
+        description: Primary key
         tests:
           - unique
           - not_null
